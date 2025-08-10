@@ -17,7 +17,7 @@ import {
 import { useState } from "react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { AlertTriangle, Mail } from "lucide-react";
-
+import Image from "next/image";
 const ForgotPasswordSchema = z.object({
   email: z.email("Please enter a valid email address."),
 });
@@ -70,6 +70,13 @@ const ForgotPassword = () => {
   return (
     <Card className="w-full max-w-md mx-auto">
       <CardHeader>
+        <Image
+          src="/logo.svg"
+          alt="Logo"
+          width={50}
+          height={50}
+          className="mx-auto mb-4"
+        />
         <CardTitle>Forgot Password</CardTitle>
       </CardHeader>
       <CardContent>

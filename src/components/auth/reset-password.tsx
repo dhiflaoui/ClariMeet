@@ -18,6 +18,7 @@ import { authClient } from "@/lib/auth-client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AlertTriangle, CheckCircle } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import Image from "next/image";
 
 export const ResetPasswordSchema = z
   .object({
@@ -90,6 +91,13 @@ const ResetPassword = () => {
   return (
     <Card className="w-full max-w-md mx-auto">
       <CardHeader>
+        <Image
+          src="/logo.svg"
+          alt="Logo"
+          width={50}
+          height={50}
+          className="mx-auto mb-4"
+        />
         <CardTitle>Reset Password</CardTitle>
       </CardHeader>
       <CardContent>

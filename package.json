@@ -13,6 +13,8 @@
     "db:migrate": "npx drizzle-kit migrate"
   },
   "dependencies": {
+    "@dicebear/collection": "^9.2.3",
+    "@dicebear/core": "^9.2.3",
     "@hookform/resolvers": "^5.2.1",
     "@neondatabase/serverless": "^1.0.1",
     "@radix-ui/react-accordion": "^1.2.11",
@@ -57,6 +59,7 @@
     "react-day-picker": "^9.8.1",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.61.1",
+    "react-icons": "^5.5.0",
     "react-resizable-panels": "^3.0.4",
     "recharts": "^2.15.4",
     "resend": "^3.5.0",
