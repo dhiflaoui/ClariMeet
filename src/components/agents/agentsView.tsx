@@ -7,7 +7,7 @@ import { ErrorState } from "../ErrorState";
 
 export const AgentsView = () => {
   const trpc = useTRPC();
-  const { data } = useSuspenseQuery(trpc.agents.list.queryOptions());
+  const { data } = useSuspenseQuery(trpc.agents.listAgents.queryOptions());
 
   return (
     <div>
